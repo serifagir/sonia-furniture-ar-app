@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//kaydırmalı menüdeki bozulmaları ve dışarı taşmaları önleyen fonksiyon 
 public class UIContentFitter : MonoBehaviour
 {
     private HorizontalLayoutGroup _horizontalLayoutGroup;

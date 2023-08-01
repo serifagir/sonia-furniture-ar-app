@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
   
 
-    public static UIManager Instance
+    public static UIManager Instance //bu sefer mobilya için değil arayüz komponenti için instance oluşturuyoruz.
     {
         get
         {
@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
 
 
   
-    public bool OnEntered(GameObject button)
+    public bool OnEntered(GameObject button) //kaydırmalı menüde ortaya gelen buton seçilmiş olur, ekrana dokunulduğunda seçilen mobilya yerleştirilir. 
     {
         List<RaycastResult> results = new List<RaycastResult>();
         _graphicRaycaster.Raycast(_pointerEventData,results);

@@ -25,7 +25,7 @@ public class InputManager : MonoBehaviour
     
     void Update()
     {
-        CrosshairCalculation();
+        CrosshairCalculation(); // crosshair fonksiyonu
         touch = Input.GetTouch(0);
 
         if (Input.touchCount < 0 || touch.phase != TouchPhase.Began)
@@ -34,11 +34,11 @@ public class InputManager : MonoBehaviour
         }
 
         if (IsPointerOverUI(touch)) return;
-
-        Instantiate(DataManager.Instance.GetFurniture(), pose.position, pose.rotation);
+ 
+        Instantiate(DataManager.Instance.GetFurniture(), pose.position, pose.rotation); //sahneye mobilyayı yerleştirme
     }
 
-    bool IsPointerOverUI(Touch touch)
+    bool IsPointerOverUI(Touch touch) // ekranda dokunduğumuz yerin hangi arayüze denkgeldiğini döndüren fonksiyon
     {
         PointerEventData eventData = new PointerEventData(EventSystem.current);
         eventData.position = new Vector2(touch.position.x, touch.position.y);
@@ -47,10 +47,10 @@ public class InputManager : MonoBehaviour
         return results.Count > 0;
     }
 
-    void CrosshairCalculation()
+    void CrosshairCalculation() // ekranın ortasına crosshair yerleştiren fonksiyon
     {
-        Vector3 origin = arCam.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0f));
-        Ray ray = arCam.ScreenPointToRay(origin);
+        Vector3 origin = arCam.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0f)); //ekranın tam ortasını belirten vektör.
+        Ray ray = arCam.ScreenPointToRay(origin); 
         if (arRaycastManager.Raycast(ray, _hits))
         {
             pose = _hits[0].pose;

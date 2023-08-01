@@ -5,6 +5,8 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item1", menuName = "AddItem/Item")]
 
+// mobilya nesnesinin içinde saklanan değerler
+// her bir instance oluşturulurken buna göre oluşturulur.
 public class Item : ScriptableObject
 {
     public float price;
