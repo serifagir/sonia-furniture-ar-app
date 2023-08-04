@@ -25,7 +25,7 @@ public class DataManager : MonoBehaviour
 
     [SerializeField] public ButtonManager buttonPrefab;
     [SerializeField] private GameObject buttonContainer;
-    [SerializeField] private List<Item> items;
+    [SerializeField] public List<Item> items;
     private int current_id = 0; //her bir mobilyanın (instance) başlama idsi, mobilyalara 0 dan başlanılarak idler verilecek.
 
     private static DataManager instance;// instance kavramı yukarıda
