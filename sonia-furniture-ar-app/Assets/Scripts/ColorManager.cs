@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class ColorManager : MonoBehaviour
 {
+
+    //DataManagerdeki items listi public yaptým.
+
+
     [SerializeField] private Material FurnitureColor; // Mobilyanýn rengini tutacak Material deðiþkeni
     [SerializeField] private Button color_1Button; // Renk düðmeleri
     [SerializeField] private Button color_2Button;
     [SerializeField] private Button color_3Button;
     [SerializeField] public ButtonManager buttonPrefab; // ButtonManager scriptini içeren ButtonManager örneði
-    private GameObject furniturePrefab; // Mobilya prefabini tutacak GameObject deðiþkeni
+    public GameObject furniturePrefab; // Mobilya prefabini tutacak GameObject deðiþkeni
 
     void Start()
     {
