@@ -25,7 +25,17 @@ public class DataManager : MonoBehaviour
 
     [SerializeField] public ButtonManager buttonPrefab;
     [SerializeField] private GameObject buttonContainer;
+
+
+
+
+    private int selectedItemId = -1;
+
+    private string selectedMessage = "Secili Mobilya Yok"; // Başlangıçta seçili bir mobilya mesajı olmadığını belirtmek için boş bir string.
+
+
     [SerializeField] public List<Item> items;
+
     private int current_id = 0; //her bir mobilyanın (instance) başlama idsi, mobilyalara 0 dan başlanılarak idler verilecek.
 
     private static DataManager instance;// instance kavramı yukarıda
@@ -46,6 +56,12 @@ public class DataManager : MonoBehaviour
     { 
         LoadItems();
         CreateButton();
+
+
+        SetSelectedMessage(selectedMessage);
+
+        GetSelectedMessage();    // Metin ataması yapabilmek için SetSelectedMessage ve GetSelectedMessage atamaları yaptım.
+
     }
 
     void LoadItems() //itemleri yüklemeye yarayan fonksiyon, şu anda resources klasöründen çekiyor, daha sonra web serverdan veya clouddan çekecek bknz. Addressables
@@ -77,4 +93,16 @@ public class DataManager : MonoBehaviour
     {
         return furniture;
     }
+  
+    public string GetSelectedMessage()
+    {
+        return selectedMessage;
+    }
+
+    public void SetSelectedMessage(string message)
+    {
+        selectedMessage = message;
+    }
+
+
 }

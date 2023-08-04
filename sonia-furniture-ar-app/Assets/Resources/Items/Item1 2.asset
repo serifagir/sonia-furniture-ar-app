@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Item1 2
   m_EditorClassIdentifier: 
   price: 0
-  itemPrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb,
+  itemPrefab: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
     type: 3}
   itemImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  message: item1 2
