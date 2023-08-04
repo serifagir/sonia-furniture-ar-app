@@ -16,4 +16,3 @@ MonoBehaviour:
   itemPrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb,
     type: 3}
   itemImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  message: item1 3
