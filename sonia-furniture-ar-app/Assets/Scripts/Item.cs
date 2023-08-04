@@ -13,4 +13,8 @@ public class Item : ScriptableObject
     public GameObject itemPrefab;
     public Sprite itemImage;
     public string message;
+    public Color Color_1;
+    public Color Color_2;
+    public Color Color_3;
+
 }
