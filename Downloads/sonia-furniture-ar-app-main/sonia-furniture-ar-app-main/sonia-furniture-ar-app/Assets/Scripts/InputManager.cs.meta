@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a366abcaa94c647fc82c003455fd395f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - arCamera: {instanceID: 0}
+  - crosshair: {fileID: 5976061990113357700, guid: 9507b96bb74af4003b8e283b62ca52a4,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
