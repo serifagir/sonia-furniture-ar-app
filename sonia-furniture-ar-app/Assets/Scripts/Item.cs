@@ -15,4 +15,5 @@ public class Item : ScriptableObject
     public Color Color_1;
     public Color Color_2;
     public Color Color_3;
+    public string message;
 }
